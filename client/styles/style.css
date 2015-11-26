@@ -1,0 +1,17 @@
+.tempA {
+    margin: 25px;
+    background: rgb(164, 226, 226);
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.75);
+}
+
+.tempB {
+    margin: 25px;
+    background: rgb(164, 226, 226);
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.75);
+}
+
+.tempC {
+    background: #AA3333;
+    margin: 25px;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.75);
+}
