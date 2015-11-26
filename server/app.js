@@ -1,5 +1,6 @@
 var  express = require('express'),
-     app = express();
+     app = express(),
+     db  = require('./modules/db/db');
 
 app.use(express.static(__dirname + '../../client'));
 
@@ -9,6 +10,7 @@ app.get('/', function (req, res) {
 
 app.get('/screen=:number', function (req, res) {
     console.log(req.params.number);
+    console.log(db[1]);
 });
 
 var server = app.listen(8080, function () {
@@ -16,5 +18,3 @@ var server = app.listen(8080, function () {
     var port = server.address().port;
     console.log('app listening at http://%s:%s', host, port);
 });
-
-// Test
