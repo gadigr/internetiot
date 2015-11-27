@@ -7,6 +7,7 @@ var messages = [{
     pics: ["a.png", "b.png"],
     template: "templates\\tempA.html",
     displayTime: 10,
+    screens: [1,2],
     timeTable: {
         dateRange: {
             from: new Date("2016-01-01"),
@@ -31,6 +32,7 @@ var messages = [{
         pics: ["a.png"],
         template: "templates\\tempB.html",
         displayTime: 10,
+        screens: [1,3],
         timeTable: {
             dateRange: {
                 from: new Date("s"),
@@ -49,6 +51,7 @@ var messages = [{
         pics: [],
         template: "templates\\tempC.html",
         displayTime: 10,
+        screens: [2,3],
         timeTable: {
             dateRange: {
                 from: new Date("2016-05-01"),
@@ -67,6 +70,7 @@ var messages = [{
         pics: [],
         template: "templates\\tempA.html",
         displayTime: 10,
+        screens: [1],
         timeTable: {
             dateRange: {
                 from: new Date("2016-03-29"),
@@ -85,6 +89,7 @@ var messages = [{
         pics: ["a.png", "b.png"],
         template: "templates\\tempB.html",
         displayTime: 10,
+        screens: [3],
         timeTable: {
             dateRange: {
                 from: new Date("2016-04-01"),

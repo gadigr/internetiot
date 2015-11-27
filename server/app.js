@@ -8,9 +8,8 @@ app.get('/', function (req, res) {
     res.sendFile("index.html");
 });
 
-app.get('/screen=:number', function (req, res) {
-    console.log(req.params.number);
-    console.log(db[1]);
+app.get('/screen=:number', function (req, res) {    
+    res.send("whee");
 });
 
 var server = app.listen(8080, function () {
