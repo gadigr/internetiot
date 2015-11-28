@@ -1,26 +1,26 @@
 var messages = [{
     name: "First",
-    text: ["text1", "text2", "text3", "text4"],
+    text: ["First", "text2", "text3", "text4"],
     pics: ["a.png", "b.png"],
     template: "templates\\tempA.html",
     displayTime: 10,
     screens: [1,2],
     timeTable: {
         dateRange: {
-            from: new Date("2016-01-01"),
+            from: new Date("2015-01-01"),
             to: new Date("2016-12-30")
         },
-        weekDays: [2, 4],
+        weekDays: [2, 4, 7],
         timeRange: [{
             day: 2,
             from: "06:00",
             to: "12:00"
         },
-            {
-                day: 4,
-                from: "13:00",
-                to: "20:00"
-            }]
+        {
+            day: 7,
+            from: "13:00",
+            to: "21:00"
+        }]
     }
 },
     {
@@ -32,14 +32,14 @@ var messages = [{
         screens: [1,3],
         timeTable: {
             dateRange: {
-                from: new Date("s"),
+                from: new Date("2016-04-01"),
                 to: new Date("2016-04-30")
             },
-            weekDays: [3, 4],
+            weekDays: [3, 4, 7],
             timeRange: [{
                 day: "*",
                 from: "10:0",
-                to: "16:00"
+                to: "21:00"
             }]
         }
     },
@@ -52,7 +52,7 @@ var messages = [{
         screens: [2,3],
         timeTable: {
             dateRange: {
-                from: new Date("2016-05-01"),
+                from: new Date("2015-05-01"),
                 to: new Date("2016-06-15")
             },
             weekDays: [1, 2, 3, 4, 5, 6, 7],
