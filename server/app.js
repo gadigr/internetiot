@@ -45,3 +45,9 @@ var server = app.listen(8080, function () {
     var port = server.address().port;
     console.log('app listening at http://%s:%s', host, port);
 });
+//
+//date.parseH = function (dateString, formatString) {
+//    var dt = parse(dateString, "HH:mm");
+//    var now = new Date();
+//    return new Date(now.getFullYear(), now.getMonth(), now.getDate(), dt.H, dt.m, dt.s, dt.S);
+//};
