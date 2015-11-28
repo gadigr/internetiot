@@ -9,6 +9,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.3"
+    "cookie-parser": "^1.4.0",
+    "date-and-time": "^0.1.8",
+    "express": "^4.13.3",
+    "express-session": "^1.12.1",
+    "uid2": "0.0.3",
+    "underscore": "^1.8.3"
   }
 }

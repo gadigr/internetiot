@@ -1,6 +1,3 @@
-/**
- * Created by gadi on 11/26/2015.
- */
 var messages = [{
     name: "First",
     text: ["text1", "text2", "text3", "text4"],
@@ -39,10 +36,11 @@ var messages = [{
                 to: new Date("2016-04-30")
             },
             weekDays: [3, 4],
-            timeRange: {
+            timeRange: [{
+                day: "*",
                 from: "10:0",
                 to: "16:00"
-            }
+            }]
         }
     },
     {
@@ -58,10 +56,11 @@ var messages = [{
                 to: new Date("2016-06-15")
             },
             weekDays: [1, 2, 3, 4, 5, 6, 7],
-            timeRange: {
+            timeRange: [{
+                day: "*",
                 from: "08:00",
                 to: "22:00"
-            }
+            }]
         }
     },
     {
@@ -77,10 +76,11 @@ var messages = [{
                 to: new Date("2016-04-15")
             },
             weekDays: [2],
-            timeRange: {
+            timeRange: [{
+                day: "*",
                 from: "15:00",
                 to: "19:00"
-            }
+            }]
         }
     },
     {
@@ -92,14 +92,20 @@ var messages = [{
         screens: [3],
         timeTable: {
             dateRange: {
-                from: new Date("2016-04-01"),
+                from: new Date("2015-04-01"),
                 to: new Date("2016-04-30")
             },
-            weekDays: [2, 3, 4],
-            timeRange: {
-                from: "01:00",
-                to: "23:00"
-            }
+            weekDays: [2, 3, 7],
+            timeRange: [{
+                day: 2,
+                from: "06:00",
+                to: "12:00"
+            },
+                {
+                    day: 7,
+                    from: "13:25",
+                    to: "20:00"
+                }]
         }
     }];
 
