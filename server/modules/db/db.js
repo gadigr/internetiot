@@ -7,19 +7,19 @@ var messages = [{
     screens: [1,2],
     timeTable: {
         dateRange: {
-            from: new Date("2015-01-01"),
+            from: new Date("2016-01-01"),
             to: new Date("2016-12-30")
         },
-        weekDays: [2, 4, 7],
+        weekDays: [2, 4],
         timeRange: [{
             day: 2,
             from: "06:00",
             to: "12:00"
         },
         {
-            day: 7,
+            day: 4,
             from: "13:00",
-            to: "21:00"
+            to: "20:00"
         }]
     }
 },
@@ -32,14 +32,14 @@ var messages = [{
         screens: [1,3],
         timeTable: {
             dateRange: {
-                from: new Date("2016-04-01"),
+                from: new Date("2016-03-01"),
                 to: new Date("2016-04-30")
             },
-            weekDays: [3, 4, 7],
+            weekDays: [3, 4],
             timeRange: [{
                 day: "*",
-                from: "10:0",
-                to: "21:00"
+                from: "10:00",
+                to: "16:00"
             }]
         }
     },
@@ -52,7 +52,7 @@ var messages = [{
         screens: [2,3],
         timeTable: {
             dateRange: {
-                from: new Date("2015-05-01"),
+                from: new Date("2016-05-01"),
                 to: new Date("2016-06-15")
             },
             weekDays: [1, 2, 3, 4, 5, 6, 7],
@@ -92,20 +92,15 @@ var messages = [{
         screens: [3],
         timeTable: {
             dateRange: {
-                from: new Date("2015-04-01"),
+                from: new Date("2016-04-01"),
                 to: new Date("2016-04-30")
             },
-            weekDays: [2, 3, 7],
+            weekDays: [2, 3, 4],
             timeRange: [{
-                day: 2,
-                from: "06:00",
-                to: "12:00"
-            },
-                {
-                    day: 7,
-                    from: "13:25",
-                    to: "20:00"
-                }]
+                day: "*",
+                from: "01:00",
+                to: "23:00"
+            }]
         }
     }];
 
