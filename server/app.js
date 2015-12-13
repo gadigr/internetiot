@@ -1,6 +1,7 @@
 var  express = require('express'),
      app = express(),
      db  = require('./modules/db/db'),
+    mDb = require('./modules/db/messages.db'),
     cookieParser = require('cookie-parser'),
     session = require('express-session'),
     _ = require("underscore");
@@ -15,13 +16,14 @@ app.use(session({   secret: '1234567890QWERTY',
 // default screen is screen 1
 app.get('/', function (req, res) {
     req.session.screen = 1;
+
     res.sendFile("index.html", { root: '../client'});
 });
 
 // localhost:8080/screen=2 to set screen 2 to session
 app.get('/screen=:number', function (req, res) {
     req.session.screen = Number(req.params.number);
-    res.sendFile("index.html", { root: '../client'});
+    res.sendFile("index.html", { root: 'client'});
 });
 
 // get next message by screen number saved on session
